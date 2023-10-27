@@ -1,20 +1,47 @@
+/***** Prep *****/
 * {
     margin: 0;
     padding: 0;
 }
 
+@font-face {
+    font-family: horrorFont;
+    src: url('res/DemonSker-zyzD.ttf');
+  }
+
 .banner {
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('res/background.jpg');
-    background-size: cover;
-    background-position: center;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
+}
+
+
+/*-------------------------------------------------------*/
+
+
+/***** All Backgrounds *****/
+#menubg {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('res/background.jpg');
+    background-size: cover;
+    background-position: center;
     animation: flicker 2s linear 1s infinite;
 }
 
+#firstbg {
+    background-color: black;
+    background-image: url('res/jumpscare.gif');
+    background-size: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*-------------------------------------------------------*/
+
+
+/***** Room Display *****/
 .strtscrn {
     display: flex;
     flex-direction: column;
@@ -23,11 +50,6 @@
     font-size: 4em;
     text-shadow: 2px 2px green;
 }
-
-@font-face {
-    font-family: horrorFont;
-    src: url('res/DemonSker-zyzD.ttf');
-  }
 
 .strtscrn h1 {
     position: absolute;
@@ -52,7 +74,17 @@
     font-family: 'Special Elite';
 }
 
+.strtopt #infotext {
+    display: none;
+}
+
 a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#info {
     color: white;
     text-decoration: none;
     font-weight: normal;
@@ -62,9 +94,22 @@ a:hover {
     color: green;
     text-shadow: 2px 2px white;
 
-    animation: distort .5s linear infinite alternate;
+    animation: distort .3s linear infinite alternate;
 }
 
+#info:hover {
+    color: green;
+    text-shadow: 2px 2px white;
+    cursor: pointer;
+
+    animation: distort .3s linear infinite alternate;
+}
+
+
+/*-------------------------------------------------------*/
+
+
+/***** Animations *****/
 @keyframes flicker
 {
     0% {filter: none;}
