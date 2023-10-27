@@ -12,14 +12,15 @@
         @import url('res/NightsideDemoRegular.ttf');
     </style>
 </head>
-<body>
-    <div class="banner"></div>
+<body onload="initialize();">
+    <div class="banner" id="menubg"></div>
     <div class="strtscrn">
         <h1>Haunted House</h1>
         <div class="strtopt">
-            <a href="start.html">Start Game >:)</a>
-            <a href="info.html">How To Play</a>
-            <a href="JavaScript:window.top.close()">Exit</a>
+            <a id="start" href="start.html">Start Game >:)</a>
+            <p id="info">How To Play</p>
+            <p id="infotext">These are the instructions</p>
+            <a id="Exit" href="JavaScript:window.top.close()">Exit</a>
         </div>
     </div>
 
