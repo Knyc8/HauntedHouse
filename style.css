@@ -6,12 +6,13 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url('res/background.gif');
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('res/background.jpg');
     background-size: cover;
     background-position: center;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
+    animation: flicker 2s linear 1s infinite;
 }
 
 .strtscrn {
@@ -19,7 +20,8 @@
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 3em;
+    font-size: 5em;
+    text-shadow: 2px 2px green;
 }
 
 @font-face {
@@ -28,12 +30,19 @@
   }
 
 .strtscrn h1 {
-    margin-top: 20%;
+    position: absolute;
+    top: 20%;
     font-family: horrorFont;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
+}
+
+.strtscrn h1:hover {
+    cursor:default;
 }
 
 .strtopt {
+    position: absolute;
+    top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +59,31 @@ a {
 }
 
 a:hover {
-    color: red;
-    font-weight: bolder;
+    color: green;
+    text-shadow: 2px 2px white;
+
+    animation: distort .5s linear infinite alternate;
+}
+
+@keyframes flicker
+{
+    0% {filter: none;}
+    3% {filter: brightness(10%)}
+    7% {filter: brightness(10%)}
+    8% {filter: none;}
+    9% {filter: none;}
+    10% {filter: brightness(10%)}
+    20% {filter: none;}
+    50% {filter: none;}
+    90% {filter: brightness(10%)}
+    100% {filter: none;}
+}
+
+@keyframes distort
+{
+    0% {transform: skew(100deg);}
+    2% {transform: skew(3deg);}
+    25% {transform: skew(-3deg);}
+    75% {transform: skew(3deg);}
+    100% {transform: skew(-3deg);}
 }
