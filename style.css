@@ -35,6 +35,9 @@
     background-size: 35%;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
