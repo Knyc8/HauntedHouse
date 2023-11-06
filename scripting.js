@@ -35,3 +35,15 @@ function scare () {
     var jumpscare = new Audio('res/pipes.mp3');
     jumpscare.play();
 }
+
+function scare2 () {
+    console.log("Sound");
+    var jumpscare = new Audio('res/fuzzy-jumpscare.mp3');
+    jumpscare.play();
+}
+
+function scare3 () {
+    console.log("Sound");
+    var jumpscare = new Audio('res/jumpscare.mp3');
+    jumpscare.play();
+}
