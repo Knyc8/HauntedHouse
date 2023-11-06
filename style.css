@@ -1,8 +1,12 @@
 /***** Prep *****/
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 0;
+    padding: 0 0;
 }
+
+@import
+    url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('res/NightsideDemoRegular.ttf');
 
 @font-face {
     font-family: horrorFont;
@@ -12,9 +16,8 @@
 .banner {
     width: 100%;
     height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
+    padding: 0% 5% 0% 5%;
 }
 
 
@@ -40,11 +43,52 @@
     gap: 10px;
 }
 
+#livingbg {
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('res/house/lobby.jpg');
+    background-color: black;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#hallbg {
+    background-color: black;
+    background-image: url('res/house/hallway.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#diningbg {
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('res/house/dining.png');
+    background-color: black;
+    background-size: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    animation: flicker 2s linear 1s infinite;
+}
 
 /*-------------------------------------------------------*/
 
 
 /***** Room Display *****/
+.story {
+    padding: 0 5% 0 5%;
+    text-align: justify;
+    color: white;
+    font-family: 'Special Elite';
+    font-size: 1.5em;
+    position: absolute;
+    top: 3%;
+    line-height: 2em;
+}
+
+/*** Start ***/
 .strtscrn {
     display: flex;
     flex-direction: column;
@@ -85,6 +129,7 @@ a {
     color: white;
     text-decoration: none;
     font-weight: normal;
+    font-family: 'Special Elite';
 }
 
 #info {
@@ -96,7 +141,9 @@ a {
 a:hover {
     color: green;
     text-shadow: 2px 2px white;
+}
 
+.strtscrn a:hover {
     animation: distort .3s linear infinite alternate;
 }
 
@@ -108,6 +155,60 @@ a:hover {
     animation: distort .3s linear infinite alternate;
 }
 
+/*** Living ***/
+#livingopt {
+    font-family: 'Special Elite';
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 40%;
+    font-size: 2em;
+}
+
+#back {
+    position: absolute;
+    top: 90%;
+    background-image: url('res/arrow.png');
+    padding: 2em 2em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1);
+    filter: drop-shadow(5px 5px 15px rgb(50, 50, 50))
+}
+
+#back:hover {
+    transform: scale(1.25);
+}
+
+/*** Dining ***/
+.dinescrn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#diningtable {
+    position: absolute;
+    left: 35%;
+    top: 55vh;
+    width: 20em; 
+    height: 8em;
+    background-color: white;
+}
+
+/***** Miscellaneous *****/
+
+#first {
+    text-align: left;
+}
+
+#middle {
+    text-align: center;
+}
+
+#last {
+    text-align: right;
+}
 
 /*-------------------------------------------------------*/
 

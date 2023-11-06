@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        @import url('res/NightsideDemoRegular.ttf');
+    </style>
     <title>Living Room</title>
 </head>
 <body>
     <div class="banner" id="livingbg">
-        <ul>
-            <a href="lChoices/hallwayl.html">Left Hall</a>
-            <a href="lChoices/hallwayr.html">Right Hall</a>
-            <a href="lChoices/staircase.html">Staircase</a>
+        <div class="story"><p>You enter into a decrepit, dimly-lit living room. Rubble and debris line every inch of the floor. It's been this way for far too long. To your left, a hallway leads toward the kitchen and dining room. To your front, a hallway leads toward a library and a grand piano room. To your right, a staircase leads up and down.</p></div>
+        <ul id="livingopt">
+            <span id="first"><a href="lChoices/hallwayl.html">Left Hall</a></span>
+            <span id="middle"><a href="lChoices/hallwayf.html">Front Hall</a></span>
+            <span id="last"><a href="lChoices/staircase.html">Staircase</a></span>
         </ul>
-        <a href="/start.html">Go back</a>
+        <a href="/start.html" id="back"></a>
     </div>
 </body>
 </html>
