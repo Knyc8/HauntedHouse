@@ -20,7 +20,6 @@
     padding: 0% 5% 0% 5%;
 }
 
-
 /*-------------------------------------------------------*/
 
 
@@ -73,6 +72,41 @@
     animation: flicker 2s linear 1s infinite;
 }
 
+#floor2 {
+    background-image: url('res/house/floor2room.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#f2hallway {
+    background-image: url('res/house/f2hallway.jpg');
+    background-position: center;
+}
+
+#bedroom {
+    background-image: url('res/house/bedroom.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#bedroom2 {
+    background-image: url('res/house/bedroom2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#playroom {
+    background-image: url('res/house/playroom.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#attic {
+    background-image: url('res/house/attic.jpg');
+    background-size: cover;
+    background-position: center;
+}
 /*-------------------------------------------------------*/
 
 
