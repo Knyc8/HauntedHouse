@@ -72,6 +72,16 @@
     animation: flicker 2s linear 1s infinite;
 }
 
+#pianobg {
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url('res/house/pianoroom.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    animation: slowflicker 2s linear 1s infinite;
+}
+
 #floor2 {
     background-image: url('res/house/floor2room.jpg');
     background-color: black;
@@ -120,6 +130,10 @@
     position: absolute;
     top: 3%;
     line-height: 2em;
+}
+
+.hint {
+    text-decoration: underline;
 }
 
 /*** Start ***/
@@ -260,6 +274,13 @@ a:hover {
     50% {filter: none;}
     90% {filter: brightness(10%)}
     100% {filter: none;}
+}
+
+@keyframes slowflicker 
+{
+    0% {filter: none;}
+    50% {filter: brightness(50%)}
+    100% {filter: none}  
 }
 
 @keyframes distort
