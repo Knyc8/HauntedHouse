@@ -42,6 +42,13 @@ function scare3 () {
 
 function piano(room) {
     console.log("Sound");
+    if (room == "menu") {
+        var pianoSong = new Audio('res/sfx/Angst.mp3');
+        pianoSong.play();
+        pianoSong.loop = true;
+        pianoSong.volume = 0.35;
+        pianoSong.currentTime += 1;
+    }
     if (room == "gpr")
     {
         var pianoSong = new Audio('../../../res/sfx/BadEncounter.mp3');
@@ -55,5 +62,40 @@ function piano(room) {
         pianoSong.play();
         pianoSong.loop = true;
         pianoSong.volume = 0.2;
+    }
+}
+
+function playAmb(room) {
+    console.log("Sound");
+    if (room == "kit") {
+        var ambience = new Audio('../../../res/sfx/kitchensfx.mp3');
+        ambience.play();
+        ambience.loop = true;
+        ambience.volume = 2;
+        ambience.currentTime += 1;
+    }
+    if (room == "hall") {
+        var ambience = new Audio('../../res/sfx/hallsfx.mp3');
+        ambience.play();
+        ambience.loop = true;
+        ambience.volume = 0.2;
+    }
+    if (room == "dine") {
+        var ambience = new Audio('../../../res/sfx/whispering.mp3');
+        ambience.play();
+        ambience.loop = true;
+        ambience.volume = 0.1;
+    }
+    if (room == "lib") {
+        var ambience = new Audio('../../../res/sfx/clock.mp3');
+        ambience.play();
+        ambience.loop = true;
+        ambience.volume = 1;
+    }
+    if (room == "living") {
+        var ambience = new Audio('../res/sfx/livingsfx.mp3');
+        ambience.play();
+        ambience.loop = true;
+        ambience.volume = 0.15;
     }
 }

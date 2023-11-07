@@ -272,7 +272,7 @@ a {
 
 #closeInfo {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: normal;
 }
 
@@ -380,6 +380,13 @@ a:hover {
 
 .last {
     text-align: right;
+}
+
+#headphones {
+    position: absolute;
+    top: 90%;
+    font-size: 0.25em;
+    font-family: 'Special Elite';
 }
 
 /*-------------------------------------------------------*/
