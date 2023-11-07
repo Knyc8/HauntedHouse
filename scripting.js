@@ -3,15 +3,18 @@ const infotxt = document.getElementById('infotext');
 var clicked = false;
 
 document.getElementById('info').addEventListener('click', () => {
-    console.log("true");
-    if (!clicked) {
+    console.log(clicked);
+
     infotxt.style.display = "flex";
+    infotxt.style.flexDirection = "column";
     clicked = true;
-    }
-    else {
-        infotxt.style.display = "none";
-        clicked = false;
-    }
+})
+
+document.getElementById('closeInfo').addEventListener('click', () => {
+    console.log(clicked);
+
+    infotxt.style.display = "none";
+    clicked = false;
 })
 
 // Testing
