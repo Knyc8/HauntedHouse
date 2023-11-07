@@ -1,21 +1,26 @@
 const infotxt = document.getElementById('infotext');
-
+const info = document.getElementById('info');
+const closeInfo = document.getElementById('closeInfo');
 var clicked = false;
 
-document.getElementById('info').addEventListener('click', () => {
-    console.log(clicked);
+if (info) {
+    info.addEventListener('click', () => {
+        console.log(clicked);
+    
+        infotxt.style.display = "flex";
+        infotxt.style.flexDirection = "column";
+        clicked = true;
+    })
+}
 
-    infotxt.style.display = "flex";
-    infotxt.style.flexDirection = "column";
-    clicked = true;
-})
-
-document.getElementById('closeInfo').addEventListener('click', () => {
-    console.log(clicked);
-
-    infotxt.style.display = "none";
-    clicked = false;
-})
+if (closeInfo) {
+    closeInfo.addEventListener('click', () => {
+        console.log(clicked);
+    
+        infotxt.style.display = "none";
+        clicked = false;
+    })
+}
 
 // Testing
 function launched() {
@@ -98,4 +103,20 @@ function playAmb(room) {
         ambience.loop = true;
         ambience.volume = 0.15;
     }
+}
+
+const door = document.getElementById('code');
+
+if (door) {
+    door.addEventListener('click', () => {
+        console.log("Clicked")
+        let result = prompt("What is the 4-digit code?:");
+    
+        if (result == "5581") {
+            //redirect
+        }
+        else {
+            alert("Incorrect Code.");
+        }
+    });
 }

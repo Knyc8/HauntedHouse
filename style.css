@@ -410,13 +410,15 @@ a:hover {
     font-size: .75em;
 }
 
-#door {
-    top: 15%;
-    left: 38vw;
+#code {
+    top: 17%;
     position: absolute;
-    background-color: white;
-    height: 75vh;
-    width: 20vw;b
+    padding: 10em 3em 10em 3em;
+    font-size: 2em;
+}
+
+#code:hover {
+    cursor: pointer;
 }
 
 
