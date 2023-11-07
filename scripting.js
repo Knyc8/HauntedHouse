@@ -54,6 +54,6 @@ function piano(room) {
         var pianoSong = new Audio('../../res/sfx/BadEncounter.mp3');
         pianoSong.play();
         pianoSong.loop = true;
-        pianoSong.volume = 0.3;
+        pianoSong.volume = 0.2;
     }
 }
