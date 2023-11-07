@@ -39,6 +39,7 @@ function scare3 () {
 
 function piano() {
     console.log("Sound");
-    var pianoSong = new Audio('/res/sfx/BadEncounter.mp3');
+    var pianoSong = new Audio('../../../res/sfx/BadEncounter.mp3');
     pianoSong.play();
+    pianoSong.loop = true;
 }
