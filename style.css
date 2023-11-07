@@ -4,14 +4,13 @@
     padding: 0 0;
 }
 
-@import
-    url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('res/NightsideDemoRegular.ttf');
 
 @font-face {
     font-family: horrorFont;
     src: url('res/DemonSker-zyzD.ttf');
-  }
+}
 
 .banner {
     width: 100%;
@@ -25,7 +24,7 @@
 
 /***** All Backgrounds *****/
 #menubg {
-    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('res/background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('res/background.jpg');
     background-size: cover;
     background-position: center;
     animation: flicker 2s linear 1s infinite;
@@ -43,7 +42,7 @@
 }
 
 #livingbg {
-    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('res/house/lobby.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('res/house/lobby.jpg');
     background-color: black;
     background-size: 100%;
     background-position: center;
@@ -57,13 +56,11 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    text-align: center;
 }
 
 #diningbg {
-    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('res/house/dining.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('res/house/dining.png');
     background-color: black;
     background-size: 100vh;
     background-position: center;
@@ -72,14 +69,29 @@
     animation: flicker 2s linear 1s infinite;
 }
 
-#pianobg {
-    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url('res/house/pianoroom.jpg');
+#librarybg {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('res/house/hauntedlibrary.jpg');
     background-color: black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    animation: slowflicker 2s linear 1s infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(15, 35, 0, 0.9) inset;
+}
+
+#pianobg {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('res/house/pianoroom.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    animation: slowflicker 4s linear 1s infinite;
 }
 
 #floor2 {
@@ -117,6 +129,7 @@
     background-size: cover;
     background-position: center;
 }
+
 /*-------------------------------------------------------*/
 
 
@@ -154,7 +167,7 @@
 }
 
 .strtscrn h1:hover {
-    cursor:default;
+    cursor: default;
 }
 
 .strtopt {
@@ -212,6 +225,50 @@ a:hover {
     font-size: 2em;
 }
 
+/*** Halls ***/
+.hallscrn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hallopt {
+    font-family: 'Special Elite';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15% 8% 0% 8%;
+    font-size: 2em;
+}
+
+/*** Dining ***/
+.dinescrn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** Kitchen ***/
+.kitscrn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** Libray ***/
+.libscrn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** Piano ***/
+.pianoscrn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/***** Miscellaneous *****/
 #back {
     position: absolute;
     top: 90%;
@@ -228,33 +285,15 @@ a:hover {
     transform: scale(1.25);
 }
 
-/*** Dining ***/
-.dinescrn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#diningtable {
-    position: absolute;
-    left: 35%;
-    top: 55vh;
-    width: 20em; 
-    height: 8em;
-    background-color: white;
-}
-
-/***** Miscellaneous *****/
-
-#first {
+.first {
     text-align: left;
 }
 
-#middle {
+.middle {
     text-align: center;
 }
 
-#last {
+.last {
     text-align: right;
 }
 
@@ -262,32 +301,80 @@ a:hover {
 
 
 /***** Animations *****/
-@keyframes flicker
-{
-    0% {filter: none;}
-    3% {filter: brightness(10%)}
-    7% {filter: brightness(10%)}
-    8% {filter: none;}
-    9% {filter: none;}
-    10% {filter: brightness(10%)}
-    20% {filter: none;}
-    50% {filter: none;}
-    90% {filter: brightness(10%)}
-    100% {filter: none;}
+@keyframes flicker {
+    0% {
+        filter: none;
+    }
+
+    3% {
+        filter: brightness(10%)
+    }
+
+    7% {
+        filter: brightness(10%)
+    }
+
+    8% {
+        filter: none;
+    }
+
+    9% {
+        filter: none;
+    }
+
+    10% {
+        filter: brightness(10%)
+    }
+
+    20% {
+        filter: none;
+    }
+
+    50% {
+        filter: none;
+    }
+
+    90% {
+        filter: brightness(10%)
+    }
+
+    100% {
+        filter: none;
+    }
 }
 
-@keyframes slowflicker 
-{
-    0% {filter: none;}
-    50% {filter: brightness(50%)}
-    100% {filter: none}  
+@keyframes slowflicker {
+    0% {
+        filter: none;
+    }
+
+    50% {
+        filter: brightness(50%)
+    }
+
+    100% {
+        filter: none
+    }
 }
 
-@keyframes distort
-{
-    0% {transform: skew(100deg);}
-    2% {transform: skew(3deg);}
-    25% {transform: skew(-3deg);}
-    75% {transform: skew(3deg);}
-    100% {transform: skew(-3deg);}
+@keyframes distort {
+    0% {
+        transform: skew(100deg);
+    }
+
+    2% {
+        transform: skew(3deg);
+    }
+
+    25% {
+        transform: skew(-3deg);
+    }
+
+    75% {
+        transform: skew(3deg);
+    }
+
+    100% {
+        transform: skew(-3deg);
+    }
 }
