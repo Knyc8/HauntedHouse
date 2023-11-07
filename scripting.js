@@ -113,7 +113,7 @@ if (door) {
         let result = prompt("What is the 4-digit code?:");
     
         if (result == "5581") {
-            //redirect
+            window.location.href = "secret.html"
         }
         else {
             alert("Incorrect Code.");
