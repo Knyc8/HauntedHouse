@@ -145,6 +145,13 @@ and (min-device-width: 1000px)
     animation: slowflicker 4s linear 1s infinite;
 }
 
+#basebg {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('res/house/lockedDoor.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
 #floor2 {
     background-image: url('res/house/floor2room.jpg');
     background-color: black;
