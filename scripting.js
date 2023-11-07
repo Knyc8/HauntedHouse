@@ -37,9 +37,20 @@ function scare3 () {
     var jumpscare = new Audio('res/sfx/jumpscare.mp3');
 }
 
-function piano() {
+function piano(room) {
     console.log("Sound");
-    var pianoSong = new Audio('../../../res/sfx/BadEncounter.mp3');
-    pianoSong.play();
-    pianoSong.loop = true;
+    if (room == "gpr")
+    {
+        var pianoSong = new Audio('../../../res/sfx/BadEncounter.mp3');
+        pianoSong.play();
+        pianoSong.loop = true;
+        pianoSong.volume = 1;
+    }
+    if (room == "hall")
+    {
+        var pianoSong = new Audio('../../res/sfx/BadEncounter.mp3');
+        pianoSong.play();
+        pianoSong.loop = true;
+        pianoSong.volume = 0.3;
+    }
 }
