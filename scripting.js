@@ -42,13 +42,13 @@ function scare3 () {
 
 function piano(room) {
     console.log("Sound");
-    if (room == "menu") {
-        var pianoSong = new Audio('res/sfx/Angst.mp3');
-        pianoSong.play();
-        pianoSong.loop = true;
-        pianoSong.volume = 0.35;
-        pianoSong.currentTime += 1;
-    }
+    // if (room == "menu") {
+    //     var pianoSong = new Audio('res/sfx/Angst.mp3');
+    //     pianoSong.play();
+    //     pianoSong.loop = true;
+    //     pianoSong.volume = 0.35;
+    //     pianoSong.currentTime += 1;
+    // }
     if (room == "gpr")
     {
         var pianoSong = new Audio('../../../res/sfx/BadEncounter.mp3');
@@ -84,7 +84,7 @@ function playAmb(room) {
         var ambience = new Audio('../../../res/sfx/whispering.mp3');
         ambience.play();
         ambience.loop = true;
-        ambience.volume = 0.1;
+        ambience.volume = 0.3;
     }
     if (room == "lib") {
         var ambience = new Audio('../../../res/sfx/clock.mp3');

@@ -150,6 +150,10 @@ and (min-device-width: 1000px)
     background-color: black;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #floor2 {
@@ -353,6 +357,18 @@ a:hover {
     align-items: center;
 }
 
+/*** Basement ***/
+#door {
+    position: absolute;
+    top: 10%;
+    font-size: 1em;
+}
+
+#clue {
+    position: absolute;
+    top: 10%;
+}
+
 /***** Miscellaneous *****/
 .back {
     position: absolute;
@@ -388,6 +404,21 @@ a:hover {
     font-size: 0.25em;
     font-family: 'Special Elite';
 }
+
+#riddle {
+    font-style: italic;
+    font-size: .75em;
+}
+
+#door {
+    top: 15%;
+    left: 38vw;
+    position: absolute;
+    background-color: white;
+    height: 75vh;
+    width: 20vw;b
+}
+
 
 /*-------------------------------------------------------*/
 
