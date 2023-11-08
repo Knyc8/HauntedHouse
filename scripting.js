@@ -1,23 +1,28 @@
 const infotxt = document.getElementById('infotext');
-
+const info = document.getElementById('info');
+const closeInfo = document.getElementById('closeInfo');
 var clicked = false;
 
 var portalOpened = true;
 
-document.getElementById('info').addEventListener('click', () => {
-    console.log(clicked);
+if (info) {
+    info.addEventListener('click', () => {
+        console.log(clicked);
+    
+        infotxt.style.display = "flex";
+        infotxt.style.flexDirection = "column";
+        clicked = true;
+    })
+}
 
-    infotxt.style.display = "flex";
-    infotxt.style.flexDirection = "column";
-    clicked = true;
-})
-
-document.getElementById('closeInfo').addEventListener('click', () => {
-    console.log(clicked);
-
-    infotxt.style.display = "none";
-    clicked = false;
-})
+if (closeInfo) {
+    closeInfo.addEventListener('click', () => {
+        console.log(clicked);
+    
+        infotxt.style.display = "none";
+        clicked = false;
+    })
+}
 
 function changeText() {
     document.getElementById("attictxt").innerHTML = "Now that he is gone, you can go to the basement and escape.";
@@ -124,4 +129,20 @@ function playAmb(room) {
         ambience.loop = true;
         ambience.volume = 0.15;
     }
+}
+
+const door = document.getElementById('code');
+
+if (door) {
+    door.addEventListener('click', () => {
+        console.log("Clicked")
+        let result = prompt("What is the 4-digit code?:");
+    
+        if (result == "5581") {
+            window.location.href = "secret.html"
+        }
+        else {
+            alert("Incorrect Code.");
+        }
+    });
 }

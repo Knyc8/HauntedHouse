@@ -453,46 +453,16 @@ a:hover {
     font-size: .75em;
 }
 
-#portal {
-    margin-top: 19%;
-    margin-left: 59%;
-}
-
-#question {
-    padding-top: 5%;
-    text-align: center;
-    color:greenyellow;
-    font-family: 'Special Elite';
-    font-size: 5em;
-    line-height: 2em;
-}
-
-#child {
-    top: 300px;
-    padding-left: 40%;
-    width: 165px;
-    height: 298px;
-}
-
-.btn {
-    position:absolute;
-    bottom: 450px;
-    left: 900px;
-    cursor: pointer; 
-    border:transparent;
-    background-color: transparent; 
-    height: 50px; 
-    width: 200px; 
-    color: red; 
-    font-size: 1.5em; 
-}
 #door {
     top: 15%;
     left: 38vw;
     position: absolute;
-    background-color: white;
-    height: 75vh;
-    width: 20vw;b
+    padding: 10em 3em 10em 3em;
+    font-size: 2em;
+}
+
+#code:hover {
+    cursor: pointer;
 }
 
 
