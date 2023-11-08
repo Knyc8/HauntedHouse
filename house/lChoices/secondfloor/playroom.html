@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../..style.css">
-    <script src="scripting.js" async></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        @import url('res/NightsideDemoRegular.ttf');
+    </style>
+    <script src="../../../scripting.js"></script>
 </head>
-<body>
-    <div class="banner" id="playroom"></div>
+<body onload="scare3();">
+    <div class="banner" id="playroom">
+        <div class="story">
+            <p>You teleported to this strange place after touching that portal. There is a child in here. He looks like he needs some help. </p>
+        </div>
+        <div id="question">
+            <p>Will you help the child?</p>
+        </div>
+
+        <ul id = "playroomopt">
+            <span class = "first"><a href = "jumpscare.html">Yes</a></span>
+            <span class = "last"><a href = "attic.html">No</a></span>
+        </ul>
+        <img src = "../../../res/child.png" id = "child">
+    </div>
 </body>
 </html>

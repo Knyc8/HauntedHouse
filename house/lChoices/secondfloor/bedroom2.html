@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../..style.css">
-    <script src="scripting.js" async></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        @import url('res/NightsideDemoRegular.ttf');
+    </style>
+    <script src="../../../scripting.js"></script>
 </head>
-<body>
-    <div class="banner" id="bedroom2"></div>
+<body onload="portalOpen();">
+    <div class="banner" id="bedroom2">
+        <div class="story">
+            <p>This is a nice looking bedroom. Wait, what was that noise??</p>
+        </div>
+        <a href="f2hallway.html" class="back"></a>
+        <div class="portal">
+            <a href = "playroom.html"><img src = "../../../res/portal.gif" id = "portal"></a>
+        </div>
+    </div>
 </body>
 </html>

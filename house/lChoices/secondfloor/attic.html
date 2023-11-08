@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../style.css">
-    <script src="scripting.js" async></script>
+    <link rel="stylesheet" href="../../../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+        @import url('res/NightsideDemoRegular.ttf');
+    </style>
+    <script src="../../../scripting.js"></script>
 </head>
 <body>
-    <div class="banner" id="attic"></div>
+    <div class="banner" id="attic">
+        <div class="story" id = "attictxt">
+            <p>
+                You teleported back to the house, but this time you are in the attic. You have the unconscious child's body with you after beating him up. You knew he was the person behind all of this.
+            </p>
+        </div>
+        <a href="floor2room.html" class="back"></a>
+        <ul id = "atticopt">
+            <button onclick = "changeText();" class="btn" id = "throw">Throw the child out the window</button>
+        </ul>
+    </div>
 </body>
 </html>

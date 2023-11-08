@@ -76,6 +76,14 @@ and (min-device-width: 1000px)
     gap: 10px;
 }
 
+#jumpscare {
+    background-image: url('res/jumpscare.jpg');
+    background-color: #1F1F1F;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #livingbg {
     background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('res/house/lobby.jpg');
     background-color: black;
@@ -329,6 +337,21 @@ a:hover {
     font-size: 2em;
 }
 
+#floor2opt {
+    font-family: 'Special Elite';
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15% 8% 0% 8%;
+    font-size: 2em;
+}
+
+#f2hallwayopt {
+    font-family: 'Special Elite';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15% 8% 0% 8%;
+    font-size: 2em;
+}
 /*** Dining ***/
 .dinescrn {
     display: flex;
@@ -367,6 +390,26 @@ a:hover {
 #clue {
     position: absolute;
     top: 10%;
+}
+
+/*** Playroom ***/
+#playroomopt {
+    font-family: 'Special Elite';
+    font-size: 5em;
+    color:greenyellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15% 8% 0% 8%;
+}
+
+/*** Attic ***/
+#atticopt {
+    padding-top: 20%;
+    font-family: 'Special Elite';
+    font-size: 2em;
+    color:red;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /***** Miscellaneous *****/
@@ -410,6 +453,39 @@ a:hover {
     font-size: .75em;
 }
 
+#portal {
+    margin-top: 19%;
+    margin-left: 59%;
+}
+
+#question {
+    padding-top: 5%;
+    text-align: center;
+    color:greenyellow;
+    font-family: 'Special Elite';
+    font-size: 5em;
+    line-height: 2em;
+}
+
+#child {
+    top: 300px;
+    padding-left: 40%;
+    width: 165px;
+    height: 298px;
+}
+
+.btn {
+    position:absolute;
+    bottom: 450px;
+    left: 900px;
+    cursor: pointer; 
+    border:transparent;
+    background-color: transparent; 
+    height: 50px; 
+    width: 200px; 
+    color: red; 
+    font-size: 1.5em; 
+}
 #door {
     top: 15%;
     left: 38vw;

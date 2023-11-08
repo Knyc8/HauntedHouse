@@ -2,6 +2,8 @@ const infotxt = document.getElementById('infotext');
 
 var clicked = false;
 
+var portalOpened = true;
+
 document.getElementById('info').addEventListener('click', () => {
     console.log(clicked);
 
@@ -17,6 +19,10 @@ document.getElementById('closeInfo').addEventListener('click', () => {
     clicked = false;
 })
 
+function changeText() {
+    document.getElementById("attictxt").innerHTML = "Now that he is gone, you can go to the basement and escape.";
+    scream();
+}
 // Testing
 function launched() {
     console.log("Launched")
@@ -29,15 +35,28 @@ function scare () {
     jumpscare.play();
 }
 
-function scare2 () {
+function scare2() {
     console.log("Sound");
-    var jumpscare = new Audio('res/sfx/fuzzy-jumpscare.mp3');
-    jumpscare.play();
+    var jumpscare2 = new Audio('/res/sfx/fuzzy-jumpscare.mp3');
+    jumpscare2.play();
 }
 
-function scare3 () {
+function scare3() {
     console.log("Sound");
-    var jumpscare = new Audio('res/sfx/jumpscare.mp3');
+    var jumpscare3 = new Audio('/res/sfx/jumpscare.mp3');
+    jumpscare3.play();
+}
+
+function scream() {
+    console.log("Sound");
+    var scream = new Audio('/res/sfx/scream.mp3');
+    scream.play();
+}
+
+function splat() {
+    console.log("Sound");
+    var scream = new Audio('/res/sfx/splat.mp3');
+    splat.play();
 }
 
 function piano(room) {
@@ -63,6 +82,13 @@ function piano(room) {
         pianoSong.loop = true;
         pianoSong.volume = 0.2;
     }
+}
+
+function portalOpen() {
+    console.log("Sound");
+    var portal = new Audio('/res/sfx/portal.mp3');
+    portal.play();
+    portalOpened = true;
 }
 
 function playAmb(room) {
