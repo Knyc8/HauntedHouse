@@ -471,6 +471,41 @@ a:hover {
     cursor: pointer;
 }
 
+#question {
+    padding-top: 5%;
+    text-align: center;
+    color:greenyellow;
+    font-family: 'Special Elite';
+    font-size: 5em;
+    line-height: 2em;
+}
+
+
+#child {
+    position:absolute;
+    left: 800px;
+    bottom: 100px;
+    width: 165px;
+    height: 298px;
+}
+
+.btn {
+    position:absolute;
+    bottom: 450px;
+    left: 900px;
+    cursor: pointer; 
+    border:transparent;
+    background-color: transparent; 
+    height: 50px; 
+    width: 200px; 
+    color: red; 
+    font-size: 1.5em; 
+}
+
+#portal {
+    margin-top: 19%;
+    margin-left: 30%;
+}
 
 /*-------------------------------------------------------*/
 
