@@ -169,35 +169,41 @@ and (min-device-width: 1000px)
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
 }
 
 #f2hallway {
     background-image: url('res/house/f2hallway.jpg');
     background-position: center;
+    text-align: center;
 }
 
 #bedroom {
     background-image: url('res/house/bedroom.jpg');
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 #bedroom2 {
     background-image: url('res/house/bedroom2.jpg');
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 #playroom {
     background-image: url('res/house/playroom.jpg');
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 #attic {
     background-image: url('res/house/attic.jpg');
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
 /*-------------------------------------------------------*/

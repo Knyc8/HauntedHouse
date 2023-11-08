@@ -42,27 +42,27 @@ function scare () {
 
 function scare2() {
     console.log("Sound");
-    var jumpscare2 = new Audio('/res/sfx/fuzzy-jumpscare.mp3');
+    var jumpscare2 = new Audio('../../../res/sfx/fuzzy-jumpscare.mp3');
     jumpscare2.play();
 }
 
 function scare3() {
     console.log("Sound");
-    var jumpscare3 = new Audio('/res/sfx/jumpscare.mp3');
+    var jumpscare3 = new Audio('../../../res/sfx/jumpscare.mp3');
     jumpscare3.play();
 }
 
 function scream() {
     console.log("Sound");
-    var scream = new Audio('/res/sfx/scream.mp3');
+    var scream = new Audio('../../../res/sfx/scream.mp3');
     scream.play();
 }
 
-function splat() {
-    console.log("Sound");
-    var scream = new Audio('/res/sfx/splat.mp3');
-    splat.play();
-}
+// function splat() {
+//     console.log("Sound");
+//     var splat = new Audio('../../../res/sfx/splat.mp3');
+//     splat.play();
+// }
 
 function piano(room) {
     console.log("Sound");
@@ -91,7 +91,7 @@ function piano(room) {
 
 function portalOpen() {
     console.log("Sound");
-    var portal = new Audio('/res/sfx/portal.mp3');
+    var portal = new Audio('../../../res/sfx/portal.mp3');
     portal.play();
     portalOpened = true;
 }
